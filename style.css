@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+    font-family: sans-serif;
+}
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.img {
+    background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+    font-size: 2em;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    padding: 20px;
+    padding-bottom: 0;
+}
+.text {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.signup {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.form-wrapper {
+    box-shadow: 0px 0px 5px;
+    padding: 10px;
+}
+.login {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    width: 70vw;
+    border: 1px;
+    
+}
+input {
+    margin: .3rem;
+    padding: 5px;;
+    border: 2px solid gray;
+}
+input:invalid:focus{
+    border: 2px solid red;
+}
+input:valid:focus{
+    border: 2px solid green;
+}
+input:focus-visible {
+    border:none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .5);
+    outline: none;
+}
+input[type='submit'] {
+    padding: 10px;
+    color:white;
+    background-color: green;
+    border: 4px solid green;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+}
+#btn {
+    border-radius: 9px;
+}
+input[type='submit']:active{
+    color: green;
+    border: 4px solid green;
+    background-color: white;
+
+}
+.input {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+@media (min-width: 728px){
+    .content {
+        flex-direction: row;
+    }
+    .img {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .form {
+        margin: auto;
+        padding: 0%;
+    }
+    
+    .input{
+        width:min-content;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 60vw;
+        gap: 2rem;
+        box-shadow: 0px 0px 5px;
+        padding: 40px;
+        /* margin: 0px; */
+    }
+    .form-wrapper {
+       box-shadow: none;
+       padding: 0;
+    }
+    .text {
+        padding-left: 2rem;
+    }
+    .btn {
+        justify-content: start;
+        margin-top: 10px;
+        margin-left: 2rem;
+    }
+}

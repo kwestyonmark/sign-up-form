@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+
+        <div class="img">
+         LOGO
+        </div>
+
+        <div class="form">
+            <div class="text">
+                <span><p> This is not a real online service Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eveniet consequuntur repellat animi sed exercitationem modi mollitia, ullam, autem quia culpa accusantium, pariatur error incidunt recusandae.</p></span>
+            </div>
+            <div class="form-wrapper">
+            <div class="signup">Sign up</div>
+        <form id="form">
+            <div class="input">
+                <label for="fname">Username:*</label>
+                <input type="text"
+                id="fname"
+                name="username"
+                minlength="3"
+                required>
+            </div>
+            <div class="input">
+                <label for="email">Email:*</label>
+                <input type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required>
+            </div>
+            <div class="input">
+                <label for="number">Phone Number:</label>
+                <input type="tel"
+                id="number"
+                name="phone-number"
+                pattern="{12}"
+                minlength= "12"
+                maxlength="12"
+                title="please enter a valid phone number" >
+            </div>
+            <div class="input">
+                <label for="password">Password:*</label>
+                <input type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                pattern="{8}"
+                title="enter a minimum of 8 character" required>
+            </div>
+            <div class="input">
+                <label for="confirm">Confirm Password:*</label>
+                <input type="password"
+                id="confirm"
+                name="password"
+                minlength="8"
+                pattern="{8}"
+                title="enter a minimum of 8 character" required>
+            </div>
+        </form>
+        <div class="btn">
+            <input id="btn" type="submit" value= 
+            'Create Account' form="form"/>
+        </div>
+    </div>
+        <div class="login">Already have an account? <a href="">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>
